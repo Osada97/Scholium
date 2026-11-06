@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <body
+    style="
+      font-family: system-ui;
+      max-width: 470px;
+      margin: 40px auto;
+      line-height: 1.6;
+    "
+  >
+    <h1>My Scholium settings</h1>
+    <p>
+      <label
+        ><input type="radio" name="engine" value="nano" /> Gemini Nano
+        (built-in)</label
+      ><br />
+      <label
+        ><input type="radio" name="engine" value="custom" /> My own
+        OpenAI-compatible model</label
+      >
+    </p>
+    <p>
+      <input
+        id="base"
+        size="40"
+        placeholder="Server address, e.g. http://localhost:11434/v1"
+      />
+    </p>
+    <p>
+      <input id="model" size="40" placeholder="Model name, e.g. llama3.2" />
+    </p>
+    <p>
+      <input
+        id="key"
+        size="40"
+        type="password"
+        placeholder="API key (leave empty for Ollama)"
+      />
+    </p>
+    <button id="save">Save</button> <span id="status"></span>
+    <script src="options.js"></script>
+  </body>
+</html>
